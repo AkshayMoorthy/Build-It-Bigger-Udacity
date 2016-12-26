@@ -20,6 +20,7 @@ import app.com.example.aks.jokeactivity.JokeActivity;
 
 public class CloudAsyncTask extends AsyncTask<Void, Void, String> {
     private static MyApi myApiService = null;
+    String text;
     private OnTaskCompleted mListener;
 
     public CloudAsyncTask (OnTaskCompleted listener) {
