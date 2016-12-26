@@ -38,7 +38,7 @@ public class MainActivityFragment extends Fragment implements OnTaskCompleted{
         mJokeButton = (Button) root.findViewById(R.id.btn_joke);
         mProgressBar = (ProgressBar) root.findViewById(R.id.progressBar);
         mInterstitialAd = new InterstitialAd(getContext());
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId(getString(R.string.interstitial_ad_unit_id));
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
